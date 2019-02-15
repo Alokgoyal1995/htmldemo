@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/form.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/pushbar.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+    rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Domine:400,700" rel="stylesheet">
+
+  <title>Web Admin Console</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="%PUBLIC_URL%/js/jquery.min.js"></script>
+  <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+  <script src="%PUBLIC_URL%/js/form.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="%PUBLIC_URL%js/pushbar.js"></script>
+  <script src="%PUBLIC_URL%js/slimscroll.js"></script>
+
+  <script type="text/javascript">
+    var pushbar = new Pushbar({
+      blur: true,
+      overlay: true,
+    });
+  </script>
+  <script>
+    var windowHT = $(window).height();
+    var applyThisHT = (windowHT - 340) + "px";
+    $('#slimScrolltable').slimscroll({
+      height: applyThisHT
+    });
+    $("#slimScrolltable, .slimScrollDiv").css("max-height", applyThisHT);
+    $("#slimScrolltable, .slimScrollDiv").css("height", "auto");
+    $(window).resize(function () {
+      var windowHT = $(window).height();
+      var applyThisHT = (windowHT - 340) + "px";
+      $('#slimScrolltable').slimscroll({
+        height: applyThisHT
+      });
+      $("#slimScrolltable, .slimScrollDiv").css("max-height", applyThisHT);
+      $("#slimScrolltable, .slimScrollDiv").css("height", "auto");
+    });
+          //  var windowHT = $(window).height();
+          //  var applyThisHT = (windowHT - 370) + "px";
+          // $('#slimScrolltable').slimscroll({
+          //     height: applyThisHT
+          // });
+          // $(window).resize(function(){
+          //     var windowHT = $(window).height();
+          //     var applyThisHT = (windowHT - 370) + "px";
+          //      $('#slimScrolltable').slimscroll({
+          //     height: applyThisHT
+          // });
+          // });
+
+
+  </script>
+  <script>
+    if (screen.width > 768) {
+      var windowHT = $(window).height();
+      var applyThisHT = (windowHT - 380) + "px";
+      $('#slimScrollstore').slimscroll({
+        height: applyThisHT,
+        color: '#fff',
+        railOpacity: 0.9,
+        railColor: '#fff',
+      });
+      $("#slimScrollstore, .slimScrollDiv").css("max-height", applyThisHT);
+      $("#slimScrollstore, .slimScrollDiv").css("height", "auto");
+      $(window).resize(function () {
+        var windowHT = $(window).height();
+        var applyThisHT = (windowHT - 380) + "px";
+        $('#slimScrollstore').slimscroll({
+          height: applyThisHT
+        });
+        $("#slimScrollstore, .slimScrollDiv").css("max-height", applyThisHT);
+        $("#slimScrollstore, .slimScrollDiv").css("height", "auto");
+
+      });
+    }
+    else {
+
+
+    }
+  </script>
+  <script>
+
+    if (screen.width > 768) {
+      var windowHT = $(window).height();
+      var applyThisHT = (windowHT - 380) + "px";
+      $('#slimScrollstore').slimscroll({
+        height: applyThisHT,
+        color: '#fff',
+        railOpacity: 0.9,
+        railColor: '#fff',
+      });
+      $("#slimScrollstore, .slimScrollDiv").css("max-height", applyThisHT);
+      $("#slimScrollstore, .slimScrollDiv").css("height", "auto");
+      $(window).resize(function () {
+        var windowHT = $(window).height();
+        var applyThisHT = (windowHT - 380) + "px";
+        $('#slimScrollstore').slimscroll({
+          height: applyThisHT
+        });
+        $("#slimScrollstore, .slimScrollDiv").css("max-height", applyThisHT);
+        $("#slimScrollstore, .slimScrollDiv").css("height", "auto");
+
+      });
+    }
+    else {
+
+
+    }
+
+      //  var windowHT = $(window).height();
+      //      var applyThisHT = (windowHT - 412) + "px";
+      //     $('#slimScrollstore').slimscroll({
+      //         height: applyThisHT,
+      //         color: '#fff',
+      //         railOpacity: 0.9,
+      //         railColor: '#fff',
+      //     });
+      //     $("#slimScrollstore, .slimScrollDiv").css("max-height",applyThisHT);
+      //     $("#slimScrollstore, .slimScrollDiv").css("height","auto");
+      //     $(window).resize(function() {
+      //         var windowHT = $(window).height();
+      //         var applyThisHT = (windowHT - 412) + "px";
+      //         $('#slimScrollstore').slimscroll({
+      //             height: applyThisHT
+      //         });
+      //         $("#slimScrollstore, .slimScrollDiv").css("max-height",applyThisHT);
+      //         $("#slimScrollstore, .slimScrollDiv").css("height","auto");
+
+      //     });
+  </script>
+</body>
+
+</html>
